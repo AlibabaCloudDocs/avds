@@ -2,7 +2,7 @@
 
 漏洞扫描提供以下相关API接口。
 
-## 资产 {#section_s2j_uea_gyc .section}
+## 资产 {#section_u2d_fqg_nuf .section}
 
 |API|描述|
 |---|--|
@@ -13,7 +13,7 @@
 |[AddAssetTags](intl.zh-CN/API参考/资产/AddAssetTags.md)|调用本接口为资产添加标签。|
 |[DescribeAssetsByTags](intl.zh-CN/API参考/资产/DescribeAssetsByTags.md)|调用本接口查询标签下的资产列表。|
 
-## 扫描任务 {#section_bij_bld_dmm .section}
+## 扫描任务 {#section_bc4_hgz_5t0 .section}
 
 |API|描述|
 |---|--|
@@ -24,7 +24,7 @@
 |[DescribeAllVulnerabilities](intl.zh-CN/API参考/扫描任务/DescribeAllVulnerabilities.md)|调用本接口获取扫描任务结果，包含检测出的漏洞数量和漏洞严重等级分布。|
 |[DescribeVulnerability](intl.zh-CN/API参考/扫描任务/DescribeVulnerability.md)|调用本接口获取漏洞详情。|
 
-## 攻击面 {#section_yii_crp_m5p .section}
+## 攻击面 {#section_ftb_6mg_ags .section}
 
 |API|描述|
 |---|--|
