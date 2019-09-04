@@ -66,14 +66,11 @@ http(s)://[Endpoint]/?Action=DescribeHostAttackSurfacesFacets
 	  <requestId>DD73CB0A-6E99-49AB-9569-5A00C9732795</requestId>
 	  <success>true</success>
 	  <data>
-		    <Facets>
-			      <CrawlerRequests>0</CrawlerRequests>
-			      <Ports>304</Ports>
-			      <WebPaths>14</WebPaths>
-			      <WebServers>14</WebServers>
-			      <WebTechs>2</WebTechs>
-		    </Facets>
-		    <requestId>DD73CB0A-6E99-49AB-9569-5A00C9732795</requestId>
+		    <CrawlerRequests>0</CrawlerRequests>
+		    <Ports>304</Ports>
+		    <WebPaths>14</WebPaths>
+		    <WebServers>14</WebServers>
+		    <WebTechs>2</WebTechs>
 	  </data>
     </DescribeHostAttackSurfacesFacets>
 ```
@@ -84,14 +81,11 @@ http(s)://[Endpoint]/?Action=DescribeHostAttackSurfacesFacets
 {
 	"requestId":"DD73CB0A-6E99-49AB-9569-5A00C9732795",
 	"data":{
-		"requestId":"DD73CB0A-6E99-49AB-9569-5A00C9732795",
-		"Facets":{
-			"CrawlerRequests":0,
-			"WebPaths":14,
-			"WebServers":14,
-			"WebTechs":2,
-			"Ports":304
-		}
+		"CrawlerRequests":0,
+		"WebPaths":14,
+		"WebServers":14,
+		"WebTechs":2,
+		"Ports":304
 	},
 	"code":"200",
 	"success":true
