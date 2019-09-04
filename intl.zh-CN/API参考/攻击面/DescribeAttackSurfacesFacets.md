@@ -75,18 +75,15 @@ http(s)://[Endpoint]/?Action=DescribeAttackSurfacesFacets
 	  <requestId>DD73CB0A-6E99-49AB-9569-5A00C9732795</requestId>
 	  <success>true</success>
 	  <data>
-		    <Facets>
-			      <Domains>10</Domains>
-			      <Subdomains>20</Subdomains>
-			      <DNSMap>20</DNSMap>
-			      <Hosts>40</Hosts>
-			      <Ports>30</Ports>
-			      <WebTechs>40</WebTechs>
-			      <WebServers>30</WebServers>
-			      <WebPaths>20</WebPaths>
-			      <CrawlerRequests>40</CrawlerRequests>
-		    </Facets>
-		    <requestId>DD73CB0A-6E99-49AB-9569-5A00C9732795</requestId>
+		    <Domains>10</Domains>
+		    <Subdomains>20</Subdomains>
+		    <DNSMap>20</DNSMap>
+		    <Hosts>40</Hosts>
+		    <Ports>30</Ports>
+		    <WebTechs>40</WebTechs>
+		    <WebServers>30</WebServers>
+		    <WebPaths>20</WebPaths>
+		    <CrawlerRequests>40</CrawlerRequests>
 	  </data>
 </DescribeAttackSurfacesFacets>
 ```
@@ -97,18 +94,15 @@ http(s)://[Endpoint]/?Action=DescribeAttackSurfacesFacets
 {
 	"requestId":"DD73CB0A-6E99-49AB-9569-5A00C9732795",
 	"data":{
-		"requestId":"DD73CB0A-6E99-49AB-9569-5A00C9732795",
-		"Facets":{
-			"DNSMap":20,
-			"CrawlerRequests":40,
-			"WebPaths":20,
-			"WebServers":30,
-			"Subdomains":20,
-			"WebTechs":40,
-			"Hosts":40,
-			"Domains":10,
-			"Ports":30
-		}
+		"DNSMap":20,
+		"CrawlerRequests":40,
+		"WebPaths":20,
+		"WebServers":30,
+		"Subdomains":20,
+		"WebTechs":40,
+		"Hosts":40,
+		"Domains":10,
+		"Ports":30
 	},
 	"code":"200",
 	"success":true
