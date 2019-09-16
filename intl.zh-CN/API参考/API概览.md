@@ -2,7 +2,7 @@
 
 漏洞扫描提供以下相关API接口。
 
-## 资产 {#section_mgd_le1_ta4 .section}
+## 资产 {#section_4cj_den_1fg .section}
 
 |API|描述|
 |---|--|
@@ -13,7 +13,7 @@
 |[AddAssetTags](intl.zh-CN/API参考/资产/AddAssetTags.md)|调用本接口为资产添加标签。|
 |[DescribeAssetsByTags](intl.zh-CN/API参考/资产/DescribeAssetsByTags.md)|调用本接口查询标签下的资产列表。|
 
-## 扫描任务 {#section_hwz_fzr_820 .section}
+## 扫描任务 {#section_oqc_5ym_blz .section}
 
 |API|描述|
 |---|--|
@@ -24,7 +24,7 @@
 |[DescribeAllVulnerabilities](intl.zh-CN/API参考/扫描任务/DescribeAllVulnerabilities.md)|调用本接口获取扫描任务结果，包含检测出的漏洞数量和漏洞严重等级分布。|
 |[DescribeVulnerability](intl.zh-CN/API参考/扫描任务/DescribeVulnerability.md)|调用本接口获取漏洞详情。|
 
-## 攻击面 {#section_wgh_ynp_vav .section}
+## 攻击面 {#section_qee_rem_hdu .section}
 
 |API|描述|
 |---|--|
@@ -33,7 +33,7 @@
 |[DescribeHostAttackSurfacesFacets](intl.zh-CN/API参考/攻击面/DescribeHostAttackSurfacesFacets.md)|调用DescribeHostAttackSurfacesFacets接口，查询任务实例对应攻击面数据项中的主机攻击面统计信息。|
 |[DescribeAttackSurfacesFacets](intl.zh-CN/API参考/攻击面/DescribeAttackSurfacesFacets.md)|调用DescribeAttackSurfacesFacets查询任务实例攻击面数据统计信息。|
 |[DescribeWebTechs](intl.zh-CN/API参考/攻击面/DescribeWebTechs.md)|调用DescribeWebTechs接口，查询任务实例对应攻击面数据项中的Web应用信息。|
-|[DescribeDomains](intl.zh-CN/API参考/攻击面/ DescribeDomains.md)|调用DescribeDomains接口，查询任务实例对应攻击面数据项中的域名信息。|
+|[DescribeDomains](intl.zh-CN/API参考/攻击面/DescribeDomains.md)|调用DescribeDomains接口，查询任务实例对应攻击面数据项中的域名信息。|
 |[DescribeHosts](intl.zh-CN/API参考/攻击面/DescribeHosts.md)|调用DescribeHosts接口，查询任务实例对应攻击面数据项中的主机列表信息。|
 |[DescribePorts](intl.zh-CN/API参考/攻击面/DescribePorts.md)|调用DescribePorts接口，查询任务实例对应攻击面数据项中的端口服务信息。|
 |[DescribeDomainAttackSurfacesFacets](intl.zh-CN/API参考/攻击面/DescribeDomainAttackSurfacesFacets.md)|调用DescribeDomainAttackSurfacesFacets接口，查询任务实例对应攻击面数据项中的域名攻击面统计信息。|
