@@ -47,7 +47,7 @@ To ensure the security of your account, we recommend that you call the CSS API a
 
 You must sign all API requests to ensure security. Cloud Security Scanner uses the request signature to verify the identity of the API caller.
 
-For more information about the signature calculation process, see [RPC API signatures](https://www.alibabacloud.com/help/doc-detail/66384.htm).
+For more information about the signature calculation process, see [Sign PRC APIs](https://www.alibabacloud.com/help/doc-detail/66384.htm).
 
 CSS implements symmetric encryption with an AccessKey ID and an AccessKey secret to verify the identity of the request sender. An AccessKey pair consists of an AccessKey ID and an AccessKey secret. An AccessKey pair is an identity credential issued to Alibaba Cloud accounts and RAM users that is similar to a logon username and password. The AccessKey ID is used to verify the identity of the user, while the AccessKey secret is used to encrypt and verify the signature string. You must keep your AccessKey secret strictly confidential.
 
@@ -86,7 +86,7 @@ Perform the following steps to calculate the signature:
     CT9X0VtwR86fNWSnsc6v8YGOjuE=
     ```
 
-3.  Add the signature string to the request parameters:
+3.  Add the signature string to the request parameters.
 
     ``` {#public3}
     https://advs.aliyuncs.com/?Action=DescribeAssets
