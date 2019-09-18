@@ -12,37 +12,37 @@ This API supports pagination, which returns specific pages of the query results.
 
 |Parameter|Type|Required|Example|Description|
 |---------|----|--------|-------|-----------|
-|Action|String|Yes|DescribeScans|The operation that you want to perform. Set the value to DescribeScans.
+|Action|String|Yes|DescribeScans| The operation that you want to perform. Set the value to DescribeScans.
 
  |
-|CurrentPage|Integer|No|1|The page number of the scan task list.
+|CurrentPage|Integer|No|1| The page number of the scan task list.
 
  |
-|Lang|String|No|zh|The language in which the list of scan tasks is returned. Valid values:
+|Lang|String|No|zh| The language in which the list of scan tasks is returned. Valid values:
 
  -   **zh**: Chinese
 -   **en**: English
 
  |
-|PageSize|Integer|No|20|The number of scan tasks to return on each page.
+|PageSize|Integer|No|20| The number of scan tasks to return on each page.
 
  |
-|ScanId|String|No|2019031816494923023|The ID of the scan task to be queried.
+|ScanId|String|No|2019031816494923023| The ID of the scan task.
 
  |
-|ScanType|String|No|vuln|The scan type of the task to be queried. Valid values:
+|ScanType|String|No|vuln| The scan type of the task. Valid values:
 
  -   **vuln**: vulnerability type
 -   **content**: content risk
 
  |
-|Search|String|No|\*\*\*. \*\*\*.net|The query condition \(task name, IP address, or domain name\) for the task to be queried.
+|Search|String|No|\*\*\*. \*\*\*.net| The query condition \(task name, IP address, or domain name\) for the task to be queried.
 
  |
-|SourceIp|String|No|1.2.3.4|The source IP address of the request.
+|SourceIp|String|No|1.2.3.4| The source IP address of the request.
 
  |
-|StatusList.N|RepeatList|No|\["finished"\]|The status of the scan task.
+|StatusList.N|RepeatList|No|\["finished"\]| The status of the scan task.
 
  -   **waiting**
 -   **finished**
@@ -52,7 +52,7 @@ This API supports pagination, which returns specific pages of the query results.
 -   **disabled**
 
  |
-|TriggerType|String|No|date|The trigger type of the scan task. Valid values:
+|TriggerType|String|No|date| The trigger type of the scan task. Valid values:
 
  -   **date**: one time
 -   **interval**: periodic
@@ -63,57 +63,57 @@ This API supports pagination, which returns specific pages of the query results.
 
 |Parameter|Type|Example|Description|
 |---------|----|-------|-----------|
-|Count|Integer|3|The number of returned scan tasks.
+|Count|Integer|3| The number of returned scan tasks.
 
  |
-|CurrentPage|Integer|1|The current page number of the returned task list.
+|CurrentPage|Integer|1| The current page number of the returned task list.
 
  |
-|List| | |The list of scan tasks.
+|List| | | The list of scan tasks.
 
  |
-|CronActive|String|1|The scheduling status of the scan task.
+|CronActive|String|1| The scheduling status of the scan task.
 
  -   **1**: active, indicating that the scan task can be scheduled.
 -   **0**: invalid, indicating that the scan task cannot be scheduled.
 
  |
-|EndDate|Long|212212000000|The end time of the returned scan task.
+|EndDate|Long|212212000000| The end time of the returned scan task.
 
  |
-|FlowName|String|skynet\_vul\_scan|The vulnerability scan mode of the returned task.
+|FlowName|String|skynet\_vul\_scan| The vulnerability scan mode of the returned task.
 
  -   **assets**: asset scan
 -   **general**: standard scan
 -   **skynet\_vul\_scan**: full scan
 
  |
-|IndexIntervalInMinute|Integer|5|The homepage detection interval of the returned task.
+|IndexIntervalInMinute|Integer|5| The homepage detection interval of the returned task.
 
  |
-|Interval|Integer|10|The scan interval of the returned task.
+|Interval|Integer|10| The scan interval of the returned task.
 
  |
-|JobStatistics|String|running|The statistics of the returned task instance. Valid values:
+|JobStatistics|String|running| The statistics of the returned task instance. Valid values:
 
  -   **running**
 -   **finished**
 -   **aborted**
 
  |
-|KeyWords| |65084125-edc6-4ef3-931f-c3e87945631e|The ID of the appended keyword library.
+|KeyWords| |65084125-edc6-4ef3-931f-c3e87945631e| The ID of the appended keyword library.
 
  |
-|LastSheduleDate|Long|1111000000|The timestamp of the last scheduled task.
+|LastSheduleDate|Long|1111000000| The timestamp of the last scheduled task.
 
  |
-|Name|String|test\_0710-3|The name of the returned task.
+|Name|String|test\_0710-3| The name of the returned task.
 
  |
-|NextRunDate|Long|1212100000|The expected start time of the next scan for each returned task.
+|NextRunDate|Long|1212100000| The expected start time of the next scan for each returned task.
 
  |
-|Period|String|minute|The cycle of each scan task.
+|Period|String|minute| The cycle of each scan task.
 
  -   **minute**: every minute
 -   **hour**: every hour
@@ -122,40 +122,40 @@ This API supports pagination, which returns specific pages of the query results.
 -   **month**: every month
 
  |
-|RefJobId|String|65084125-edc6-4ef3-931f-c3e87945631e|The ID of the scan task that is associated with the task.
+|RefJobId|String|65084125-edc6-4ef3-931f-c3e87945631e| The ID of the scan task that is associated with the task.
 
  |
-|ReportUrl|String|http://\*\*\*.com|The link of the generated report for each returned task.
+|ReportUrl|String|http://\*\*\*.com| The link of the generated report for each returned task.
 
  |
-|RunPercent|Float|100.0|The progress \(in percentage\) of the task that is in the running state.
+|RunPercent|Float|100.0| The progress \(in percentage\) of the task that is in the running state.
 
  |
-|RuntimeEnd|String|1545972690000|The start time of the returned scan task.
+|RuntimeEnd|String|1545972690000| The start time of the returned scan task.
 
  |
-|RuntimeStart|String|1545972690000|The end time of the returned scan task.
+|RuntimeStart|String|1545972690000| The end time of the returned scan task.
 
  |
-|ScanAll|Integer|1|Indicates whether all assets have been scanned.
+|ScanAll|Integer|1| Indicates whether all assets have been scanned.
 
  |
-|ScanId|String|2018071010171127450|The task ID of the corresponding scan task.
+|ScanId|String|2018071010171127450| The task ID of the corresponding scan task.
 
  |
-|ScanType|String|vuln|The scan type of the returned task.
+|ScanType|String|vuln| The scan type of the returned task.
 
  -   **vuln**: vulnerability type
 -   **content**: content risk
 
  |
-|SiteIntervalInDay|Integer|1|The site detection interval of the returned task. Unit: days.
+|SiteIntervalInDay|Integer|1| The site detection interval of the returned task. Unit: days.
 
  |
-|StartDate|Long|111122200000|The start time of each returned task.
+|StartDate|Long|111122200000| The start time of each returned task.
 
  |
-|Status|String|running|The scan status of the returned task.
+|Status|String|running| The scan status of the returned task.
 
  -   **waiting**
 -   **finished**
@@ -165,28 +165,28 @@ This API supports pagination, which returns specific pages of the query results.
 -   **disabled**
 
  |
-|Targets| |\["demo.testfire.net"\]|The name of the asset \(IP address, domain name, or subdomain name\).
+|Targets| |\["demo.testfire.net"\]| The name of the asset \(IP address, domain name, or subdomain name\).
 
  |
-|TargetsOriginal| |testtag|The original content of the asset when the scan task was created, that is, the group label of the scanned asset.
+|TargetsOriginal| |testtag| The original content of the asset when the scan task was created, that was, the group label of the scanned asset.
 
  |
-|TriggerType|String|date|The trigger type of the returned task.
+|TriggerType|String|date| The trigger type of the returned task.
 
  -   **date**: one time
 -   **interval**: periodic
 
  |
-|PageCount|Integer|1|The number of returned pages.
+|PageCount|Integer|1| The number of returned pages.
 
  |
-|PageSize|Integer|20|The number of entries returned per page.
+|PageSize|Integer|20| The number of entries returned per page.
 
  |
-|RequestId|String|B92696EA-44DE-4DE4-B3B7-07655394DC7C|The ID of the request.
+|RequestId|String|B92696EA-44DE-4DE4-B3B7-07655394DC7C| The ID of the request.
 
  |
-|TotalCount|Integer|4|The number of returned scan tasks.
+|TotalCount|Integer|4| The number of returned scan tasks.
 
  |
 
@@ -343,7 +343,7 @@ Sample success responses
 }
 ```
 
-## Error codes { .section}
+## Error codes {#section_67y_rev_jnl .section}
 
 For more information about error codes, visit [API Error Center](https://error-center.alibabacloud.com/status/product/avds).
 
