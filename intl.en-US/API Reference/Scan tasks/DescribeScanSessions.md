@@ -2,7 +2,7 @@
 
 You can call this operation to query task instances generated for scan tasks.
 
-You can also call this operation to query task instances generated for scan tasks by pagination.
+You can call this operation to query task instances generated for scan tasks by pagination.
 
 ## Debugging {#api_explorer .section}
 
@@ -12,25 +12,25 @@ You can also call this operation to query task instances generated for scan task
 
 |Parameter|Type|Required|Example|Description|
 |---------|----|--------|-------|-----------|
-|Action|String|Yes|DescribeScanSessions|The operation that you want to perform. Set the value to DescribeScanSessions.
+|Action|String|Yes|DescribeScanSessions| The operation that you want to perform. Set the value to DescribeScanSessions.
 
  |
-|CurrentPage|Integer|No|3|The number of the page to return.
+|CurrentPage|Integer|No|3| The number of the page to return.
 
  |
-|PageSize|Integer|No|20|The number of entries to return on each page.
+|PageSize|Integer|No|20| The number of entries to return on each page.
 
  |
-|ScanId|String|No|66c07fa5-542b-47df-8501-e0401dc42d3e|The ID of the scan task for which the task instance is generated.
+|ScanId|String|No|66c07fa5-542b-47df-8501-e0401dc42d3e| The ID of the scan task for which the task instance is generated.
 
  |
-|Search|String|No|1.2.\*. \*|The search field of the scan task for which the task instance is generated.
+|Search|String|No|1.2.\*. \*| The search field of the scan task for which the task instance is generated.
 
  |
-|SourceIp|String|No|1.2.3.4|The source IP address of the request.
+|SourceIp|String|No|1.2.3.4| The source IP address of the request.
 
  |
-|StatusList.N|RepeatList|No|waiting|The status of the subtask for which the task instance is generated.
+|StatusList.N|RepeatList|No|waiting| The status of the subtask for which the task instance is generated.
 
  -   **waiting**
 -   **finished**
@@ -43,25 +43,25 @@ You can also call this operation to query task instances generated for scan task
 
 |Parameter|Type|Example|Description|
 |---------|----|-------|-----------|
-|Count|Integer|20|The number of entries returned.
+|Count|Integer|20| The number of entries returned.
 
  |
-|CurrentPage|Integer|5|The current page number.
+|CurrentPage|Integer|5| The current page number.
 
  |
-|List| | |The list of returned task instances.
+|List| | | The list of returned task instances.
 
  |
-|CreatedAt|Long|1565690460000|The time at which the scan was created.
+|CreatedAt|Long|1565690460000| The time at which the scan was created.
 
  |
-|FinishedAt|Long|1565690260000|The time at which the scan was ended.
+|FinishedAt|Long|1565690260000| The time at which the scan was ended.
 
  |
-|Interval|Integer|1|The interval between scan tasks.
+|Interval|Integer|1| The interval between scan tasks.
 
  |
-|JobStatus|String|waiting|The status of the subtask.
+|JobStatus|String|waiting| The status of the subtask.
 
  -   **waiting**
 -   **finished**
@@ -69,10 +69,10 @@ You can also call this operation to query task instances generated for scan task
 -   **aborted**
 
  |
-|Name|String|test|The name of the returned scan task.
+|Name|String|test| The name of the returned scan task.
 
  |
-|Period|String|hour|The cycle of each scan task.
+|Period|String|hour| The cycle of each scan task.
 
  -   **minute**: every minute
 -   **hour**: every hour
@@ -81,7 +81,7 @@ You can also call this operation to query task instances generated for scan task
 -   **month**: every month
 
  |
-|ReportStatus|String|running|The status of the reports generated for the task instances.
+|ReportStatus|String|running| The status of the reports generated for the task instances.
 
  -   **failed**
 -   **finished**
@@ -89,37 +89,37 @@ You can also call this operation to query task instances generated for scan task
 -   **inexistent**
 
  |
-|ReportUrl|String|http://\*\*\*.com|The report link generated for the each task instance.
+|ReportUrl|String|http://\*\*\*.com| The report link generated for the each task instance.
 
  |
-|RunPercent|Float|10.21|The scan progress of the task instance.
+|RunPercent|Float|10.21| The scan progress of the task instance.
 
  |
-|ScanId|String|c0065a11-fe41-44f4-a5d2-b921316ddb52|The ID of the subtask for which the task instance is generated.
+|ScanId|String|c0065a11-fe41-44f4-a5d2-b921316ddb52| The ID of the subtask for which the task instance is generated.
 
  |
-|Targets| |\["1.2.3.5"\]|The targets, such as IP, domain name, and subdomain name, of the task instance.
+|Targets| |\["1.2.3.5"\]| The targets, such as IP, domain name, and subdomain name, of the task instance.
 
  |
-|TaskId|Long|1236984|The ID of the task instance.
+|TaskId|Long|1236984| The ID of the task instance.
 
  |
-|TriggerType|String|date|The trigger type of the subtask for which the task instance is generated.
+|TriggerType|String|date| The trigger type of the subtask for which the task instance is generated.
 
  -   **date**: one time
 -   **interval**: periodic task
 
  |
-|PageCount|Integer|20|The number of returned pages.
+|PageCount|Integer|20| The number of returned pages.
 
  |
-|PageSize|Integer|20|The number of returned entries per page.
+|PageSize|Integer|20| The number of returned entries per page.
 
  |
-|RequestId|String|F8955687-DDFC-4FE1-BC67-5C613657B8E5|The ID of the request.
+|RequestId|String|F8955687-DDFC-4FE1-BC67-5C613657B8E5| The ID of the request.
 
  |
-|TotalCount|Integer|30|The number of returned task instances.
+|TotalCount|Integer|30| The number of returned task instances.
 
  |
 
@@ -204,7 +204,7 @@ Sample success responses
 }
 ```
 
-## Error codes { .section}
+## Error codes {#section_1mf_cq1_byt .section}
 
 For more information about error codes, visit [API Error Center](https://error-center.alibabacloud.com/status/product/avds).
 
