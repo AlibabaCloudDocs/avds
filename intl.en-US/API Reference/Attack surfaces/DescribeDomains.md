@@ -1,6 +1,6 @@
 # DescribeDomains {#doc_api_avds_DescribeDomains .reference}
 
-You can also call this operation to query the domain names that are included in the corresponding attack surface of the task instance.
+You can call this operation to query the domain names that are included in the corresponding attack surface of the task instance.
 
 You can call this operation to query the domain names that are included in the corresponding attack surface when the asset is scanned in the task instance.
 
@@ -12,19 +12,19 @@ You can call this operation to query the domain names that are included in the c
 
 |Parameter|Type|Required|Example|Description|
 |---------|----|--------|-------|-----------|
-|Action|String|Yes|DescribeDomains|The operation that you want to perform. Set the value to DescribeDomains.
+|Action|String|Yes|DescribeDomains| The operation that you want to perform. Set the value to DescribeDomains.
 
  |
-|TaskId|Integer|Yes|12345|The ID of the task. You can specify this parameter to obtain the data of the specific task.
+|TaskId|Integer|Yes|12345| The ID of the task. You can specify this parameter to obtain the data of the specific task.
 
  |
-|Asset|String|No|foo.com|The name of the asset. You can specify this parameter to query detection data of the specific asset.
+|Asset|String|No|foo.com| The name of the asset. You can specify this parameter to query detection data of the specific asset.
 
  |
-|CurrentPage|Integer|No|1|The number of the page to return. Default value: 1.
+|CurrentPage|Integer|No|1| The number of the page to return. Default value: 1.
 
  |
-|PageSize|Integer|No|10|The number of entries to return on each page. Default value: 10. This is the maximum value.
+|PageSize|Integer|No|10| The number of entries to return on each page. Default value: 10. This is the maximum value.
 
  |
 
@@ -32,22 +32,22 @@ You can call this operation to query the domain names that are included in the c
 
 |Parameter|Type|Example|Description|
 |---------|----|-------|-----------|
-|Records| | |The list of returned records.
+|Records| | | The list of returned records.
 
  |
-|Domain|String|foo.com|The domain name.
+|Domain|String|foo.com| The domain name.
 
  |
-|Index|Integer|1|The index number of the returned record.
+|Index|Integer|1| The index number of the returned record.
 
  |
-|UpdatedAt|Long|1561392000000|The timestamp of the scan.
+|UpdatedAt|Long|1561392000000| The timestamp of the scan.
 
  |
-|RequestId|String|DD73CB0A-6E99-49AB-9569-5A00C9732795|The ID of the request.
+|RequestId|String|DD73CB0A-6E99-49AB-9569-5A00C9732795| The ID of the request.
 
  |
-|Total|Integer|10,000|The number of returned entries.
+|Total|Integer|10,000| The number of returned entries.
 
  |
 
@@ -110,7 +110,7 @@ Sample success responses
 }
 ```
 
-## Error codes { .section}
+## Error codes {#section_bd8_g9q_dgx .section}
 
 For more information about error codes, visit [API Error Center](https://error-center.alibabacloud.com/status/product/avds).
 
